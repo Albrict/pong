@@ -305,6 +305,9 @@ void run()
 void exit_pong()
 {
     endwin();
+    free(player_one);
+    free(player_two);
+    free(ball);
     exit(0);
 }
 
